@@ -1,0 +1,95 @@
+.headContainer{
+    position: fixed;
+    width: 100%;
+}
+.bodyContainer{
+    padding-top: 10%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #504f4f;
+}
+.bodyContainer .detailsContainer{
+    height: 17%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-bottom: 2%;
+}
+.bodyContainer .detailsContainer .heading{
+    font-size: 60px;
+    align-content: center;
+    justify-self: center;
+    font-weight: bold;
+    cursor: default;
+}
+.bodyContainer .aboutContainer{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 5%;
+    cursor: default;
+}
+.bodyContainer .aboutContainer .labelContainer{
+    font-size: 20px;
+    font-weight: 500;
+    margin: 20px;
+    width: 100%;
+}
+.bodyContainer .aboutContainer .labelContainer .value{
+    color: #150a02;
+    font-size: 30px;
+    cursor: default;
+}
+.bodyContainer .skillsContainer{
+    width: 95%;
+    height: 38%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+.bodyContainer .skillsContainer .heading{
+    font-size: 60px;
+    align-content: center;
+    justify-self: center;
+    font-weight: bold;
+    cursor: default;
+}
+.bodyContainer .skillsContainer .content .contentRow .contentRowHead{
+    font-size: 38px;
+    font-weight: 500;
+    cursor: default;
+}
+.bodyContainer .skillsContainer .content .contentRow .contentRowBody{
+    display: flex;
+    flex-direction: row;
+}
+.bodyContainer .resumeContainer{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 5%;
+    padding-bottom: 4%;
+}
+.bodyContainer .resumeContainer .resumeLink{
+    background-color: #150a02;
+    width: 10%;
+    height: 10vh;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #b4b4b4;
+    font-weight: 600;
+}
+.bodyContainer .resumeContainer .resumeLink:hover{
+    background-color: #b4b4b4;
+    color: #150a02;
+    filter: drop-shadow(10px 2px 6px black)
+}
+.iconComp:hover{
+    filter: drop-shadow(10px 2px 6px black)
+}

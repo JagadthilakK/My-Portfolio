@@ -1,0 +1,36 @@
+.header{
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #161616;
+}
+.header .title{
+    width: 50%;
+    font-size: 50px;
+    margin-left: 3%;
+    color:  #b4b4b4;
+    font-weight: bold;
+    cursor: -webkit-grabbing;
+}
+.header .menu{
+    width: 50%;
+}
+.header .menu ul{
+    list-style: none;
+    text-align: right;
+    margin-right: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.header .menu ul li .link{
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+.header .menu ul li .link:hover{
+    color: #b4b4b4;
+}
