@@ -1,0 +1,46 @@
+.lineContainer {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+}
+.lineSection {
+    width: 48%;
+    height: 39px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.line {
+    height: 5px;
+    width: 90%;
+    background-color: #b4b4b4;
+}
+.textSection {
+    width: 7%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: default;
+}
+.text {
+    font-size: 25px;
+    color: #b4b4b4;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .lineContainer {
+        flex-direction: column;
+    }
+    .lineSection, .textSection {
+        width: 100%;
+        margin: 5px 0;
+    }
+    .text {
+        font-size: 20px;
+    }
+}

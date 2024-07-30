@@ -37,7 +37,7 @@ export const Contact = () =>{
                         </div> 
                     </div>
                     <div className={styles.iconContainer}>
-                    <h3>Click to view profiles : </h3>
+                    <div className={styles.iconHeader}>Click to view profiles : </div>
                         <a href="https://github.com/JagadthilakK" target="_blank" rel="noreferrer"><img src={require("../Icons/github.png")} alt="git" className={styles.icon}/></a>
                         <a href="https://www.linkedin.com/in/jagadthilak/" target="_blank" rel="noreferrer"><img src={require("../Icons/linkedin.png")} alt="linkedIn" className={styles.icon}/></a>
                         <a href="https://leetcode.com/u/Jagadthilak/" target="_blank" rel="noreferrer"><img src={require("../Icons/leetcode.png")} className={styles.icon} alt="leet"></img></a>

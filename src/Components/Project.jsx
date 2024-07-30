@@ -39,7 +39,7 @@ export const Project = () =>{
         <Trans>
             <Header list={menuList} name="PROJECTS IN MY GIT REPO"/>
             <div className={styles.bodyContainer}>
-                <h1>Click them for preview : </h1>  
+                <div className={styles.previewHeading}>Click them for preview : </div>  
                 <div className={styles.gridContainer}>
                     {projects.map(image=>(
                         <div key={image.id} className={styles.gridItem} onClick={()=>openModal(image)}>

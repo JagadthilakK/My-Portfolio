@@ -6,7 +6,6 @@ import { Trans } from "./TransitionComp/Trans"
 
 export const Home = () =>{
     const menuList = [
-        { name: 'Home', path: '/' },
         { name: 'About', path: '/about' },
         { name: 'Experience', path: '/experience'},
         { name: 'Projects', path: '/project' },
@@ -28,14 +27,14 @@ export const Home = () =>{
                         <div className={styles.name}>I'm JAGADTHILAK K</div>
                         <div className={styles.altName}>( You can call me JK )</div>
                         <div className={styles.text}>
-                            I completed my BE in 2022, My specilzation was Electronics and communication(ECE).<br/>
-                            My core was circuit chips and stuff but I got into love with tech & development.<br/>
-                            So did a course in full stack
-                            Now I'm mastering and playing with it ...!!
+                        Completed B.E. in Electronics and Communication (2022), specializing in circuit chips. 
+                        Transitioned into tech and development, starting as a Frontend Developer with a focus on React.js. 
+                        Developed dynamic, responsive web applications and pursued a Full Stack Development course to enhance both frontend and backend skills. 
+                        Passionate about creating innovative digital experiences and continuously mastering new technologies...
                         </div>
                     </div>
                     <div className={styles.aboutRefContainer}>
-                        <Link className={styles.link} to="/about">R<br/>e<br/>a<br/>d<br/><br/>M<br/>o<br/>r<br/>e</Link>
+                        <Link className={styles.link} to="/about">Know More</Link>
                     </div>
                 </div>
             </div>

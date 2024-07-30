@@ -1,16 +1,18 @@
-export const LineComponent = (props)=>{
-    return(
-    <>
-        <div style={{display:"flex",flexDirection:"row"}}>
-            <div style={{width:"48%",height:"39px",display:"flex",alignItems:"center",justifyContent:'center'}}>
-                <div style={{height:"5px", width:"90%", backgroundColor:"#b4b4b4"}}></div>
+import React from 'react';
+import styles from '../StyleSheet/LineComponent.module.css';
+
+export const LineComponent = (props) => {
+    return (
+        <div className={styles.lineContainer}>
+            <div className={styles.lineSection}>
+                <div className={styles.line}></div>
             </div>
-            <div style={{width:'7%',height:'50px',display:"flex",justifyContent:"center",cursor:"default"}}>
-                <div style={{fontSize:"25px" , color:"#b4b4b4"}}>{props.name}</div>
+            <div className={styles.textSection}>
+                <div className={styles.text}>{props.name}</div>
             </div>
-            <div style={{width:"48%",height:"39px",display:"flex",alignItems:"center",justifyContent:'center'}}>
-                <div style={{height:"5px", width:"90%", backgroundColor:"#b4b4b4"}}></div>
+            <div className={styles.lineSection}>
+                <div className={styles.line}></div>
             </div>
         </div>
-    </>
-)}
+    );
+};

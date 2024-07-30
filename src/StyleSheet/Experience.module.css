@@ -1,34 +1,36 @@
-.headContainer{
+.headContainer {
     position: fixed;
     width: 100%;
     z-index: 10;
+    background: #504f4f;
+    box-sizing: border-box;
 }
-.bodyContainer{
+.bodyContainer {
     width: 100%;
-    height: 100%;
     background-color: #504f4f;
     display: flex;
     flex-direction: column;
-    padding-top: 10%;
+    padding-top: 14%;
+    box-sizing: border-box;
 }
-.bodyContainer .contentContainer{
-    padding-top: 5%;
-    padding-left: 10%;
+.contentContainer {
+    padding: 4% 10%;
+    box-sizing: border-box;
 }
-.bodyContainer .contentContainer .heading{
+.heading {
     font-size: 60px;
-    align-content: center;
-    justify-self: center;
     font-weight: bold;
     cursor: default;
     padding-bottom: 1.5%;
+    color: #fff;
 }
 .timeline {
-    width: 60%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     gap: 20px;
-    margin: 20px;
+    margin: 0;
+    box-sizing: border-box;
 }
 .timelineItem {
     background: #5b5b5b;
@@ -37,6 +39,7 @@
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     position: relative;
     color: #fff;
+    box-sizing: border-box;
 }
 .timelineDate {
     background: #444;
@@ -48,24 +51,74 @@
     font-size: 20px;
 }
 .timelineContent {
-    margin-left: 50px;
+    margin-left: 60px;
+    box-sizing: border-box;
 }
 .timelineTitle {
     font-size: 35px;
     margin-bottom: 10px;
-} 
+}
 .timelineCompany {
     font-weight: normal;
     color: rgb(28, 28, 28);
 }
 .timelineContent {
-    list-style: none;
+    list-style:square ;
     padding-left: 0;
 }
-  .timelineDescription li {
+.timelineDescription li {
     margin-bottom: 5px;
 }
-.currentWork{
+.currentWork {
     font-size: 30px;
     padding: 1%;
+    color: #fff;
+    padding-bottom: 5%;
+}
+
+@media (max-width: 768px) {
+    .heading {
+        font-size: 40px;
+    }
+    .bodyContainer {
+        padding-top: 30%;
+    }
+    .timeline {
+        width: 100%;
+        padding: 0 5%;
+    }
+    .timelineDate {
+        font-size: 16px;
+    }
+    .timelineTitle {
+        font-size: 25px;
+    }
+    .currentWork {
+        font-size: 24px;
+    }
+}
+@media (max-width: 480px) {
+    .heading {
+        font-size: 30px;
+        padding-bottom: 5%;
+    }
+    .bodyContainer {
+        padding-top: 45%;
+    }
+    .timeline {
+        width: 100%;
+        padding: 0 2%;
+    }
+    .timelineDate {
+        font-size: 14px;
+    }
+    .timelineTitle {
+        font-size: 20px;
+    }
+    .currentWork {
+        font-size: 20px;
+    }
+    .contentContainer {
+        padding: 5% 2%;
+    }
 }
