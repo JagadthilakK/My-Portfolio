@@ -51,6 +51,7 @@
     font-size: 20px;
 }
 .timelineContent {
+    width: 95%;
     margin-left: 60px;
     box-sizing: border-box;
 }
@@ -63,7 +64,7 @@
     color: rgb(28, 28, 28);
 }
 .timelineContent {
-    list-style:square ;
+    list-style:none ;
     padding-left: 0;
 }
 .timelineDescription li {

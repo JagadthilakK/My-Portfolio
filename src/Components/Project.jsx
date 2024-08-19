@@ -18,12 +18,15 @@ export const Project = () =>{
     ] 
 
     const projects = [
-        {id:1,src:require('../Images/ProjectsImages/project3.png'),name:'Brainstrom game',href:"https://match-to-win.netlify.app/"},
-        {id:2,src:require('../Images/ProjectsImages/project4.png'),name:'To-Do App',href:"https://to-chore-app.netlify.app/"},
-        {id:3,src:require('../Images/ProjectsImages/project5.png'),name:'Advise App',href:"https://get-advise-onclick-button.netlify.app/"},
-        {id:4,src:require('../Images/ProjectsImages/project1.png'),name:'My porfolio'},
+        {id:1,src:require('../Images/ProjectsImages/project3.png'),name:'Brainstrom game',href:"https://match-to-win.netlify.app/",description:""},
+        {id:2,src:require('../Images/ProjectsImages/project2.png'),name:"Health Track Dashboard",href:"https://health-track-dashboard.netlify.app/"},
+        {id:3,src:require('../Images/ProjectsImages/project4.png'),name:'To-Do App',href:"https://to-chore-app.netlify.app/"},
+        {id:4,src:require('../Images/ProjectsImages/project6.png'),name:'CRUD Operation Page',href:"https://crud-page.netlify.app/"},
+        {id:5,src:require('../Images/ProjectsImages/project5.png'),name:'Advise App',href:"https://get-advise-onclick-button.netlify.app/"},
+        {id:6,src:require('../Images/ProjectsImages/project1.png'),name:'My porfolio'},
 
     ]
+
 
     const openModal=(image)=>{
         setmodalOpen(true)
@@ -55,6 +58,7 @@ export const Project = () =>{
                     <h2 className={styles.projectNameInsideModal}>{clickedImage.name}</h2>
                     <img src={clickedImage.src} alt={clickedImage.name} width={"200px"} height={"200px"} className={styles.projectImageInsideModal}/>
                     <a href={clickedImage.href} target="_blank" rel="noreferrer" className={styles.projectsPreviewButton}> Preview Link <img src={require("../Icons/link.png")} alt="linkIcon" className={styles.previewLinkIcon}/></a>
+                    {/* <p>{clickedImage.description}</p> */}
                 </Modal>
             )}
             <Footer/>
