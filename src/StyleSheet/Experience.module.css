@@ -50,9 +50,9 @@
     left: -10px;
     font-size: 20px;
 }
-.timelineContent {
+.timelineContentContainer {
     width: 95%;
-    margin-left: 60px;
+    margin-left: 50px;
     box-sizing: border-box;
 }
 .timelineTitle {
@@ -97,6 +97,9 @@
     .currentWork {
         font-size: 24px;
     }
+    .timelineContentContainer {
+        margin-left: 0px;
+    }
 }
 @media (max-width: 480px) {
     .heading {
@@ -121,5 +124,8 @@
     }
     .contentContainer {
         padding: 5% 2%;
+    }
+    .timelineContentContainer {
+        margin-left: 0px;
     }
 }

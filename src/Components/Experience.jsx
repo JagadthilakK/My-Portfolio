@@ -107,7 +107,7 @@ export const Experience = () =>{
                         {experiences.map((exp, index) => (
                             <div key={index} className={styles.timelineItem}>
                             <div className={styles.timelineDate}>{exp.date}</div>
-                            <div className={styles.timelineContent}>
+                            <div className={styles.timelineContentContainer}>
                                 <h3 className={styles.timelineTitle}>{exp.title} <span className={styles.timelineCompany}>— {exp.company}</span></h3>
                                 <ul className={styles.timelineContent}>
                                 {exp.description.map((desc, i) => (
@@ -125,7 +125,7 @@ export const Experience = () =>{
                         {education.map((exp, index) => (
                             <div key={index} className={styles.timelineItem}>
                             <div className={styles.timelineDate}>{exp.date}</div>
-                            <div className={styles.timelineContent}>
+                            <div className={styles.timelineContentContainer}>
                                 <h3 className={styles.timelineTitle}>{exp.title} <span className={styles.timelineCompany}>— {exp.institution}</span></h3>
                                 <ul className={styles.timelineContent}>
                                 {exp.description.map((desc, i) => (
